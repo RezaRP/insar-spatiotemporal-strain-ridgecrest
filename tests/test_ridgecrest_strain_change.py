@@ -7,8 +7,8 @@ from ridgecrest_strain_change import (
     holm_adjust,
     positive_page_cusum,
     signed_spatial_clusters,
-    sliding_block_maximum,
     sliding_block_cusum_maxima,
+    sliding_block_maximum,
     standardized_innovation,
     strain_energy,
 )

@@ -13,14 +13,15 @@ This module is intended for the vertical-to-LOS correction sequence:
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-from typing import Iterable, Literal, Sequence
-
 import math
+from collections.abc import Iterable, Sequence
+from dataclasses import dataclass
+from typing import Literal
 
 import numpy as np
 import pandas as pd
 from scipy.spatial import Delaunay, QhullError
+
 Family = Literal[
     "ok_exponential",
     "ok_matern32",

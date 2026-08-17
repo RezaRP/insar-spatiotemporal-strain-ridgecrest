@@ -17,20 +17,19 @@ have been reviewed.
 
 from __future__ import annotations
 
+import math
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Mapping, Sequence
-import math
 
 import numpy as np
 import pandas as pd
+import tifffile
 from PIL import Image
 from pyproj import Transformer
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import ConstantKernel, Matern
 from sklearn.linear_model import HuberRegressor
-import tifffile
-
 
 WAVELENGTH_MM = 55.46576
 PHASE_TO_LOS_MM = -WAVELENGTH_MM / (4.0 * np.pi)

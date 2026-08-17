@@ -8,7 +8,6 @@ from ridgecrest_fault_barrier_cokriging import (
     matern32_correlation,
 )
 
-
 ASCENDING_LOOK = np.array([-0.55, -0.10])
 DESCENDING_LOOK = np.array([0.55, -0.12])
 

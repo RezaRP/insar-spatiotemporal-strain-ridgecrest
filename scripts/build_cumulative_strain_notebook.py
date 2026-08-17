@@ -6,7 +6,6 @@ from pathlib import Path
 
 import nbformat as nbf
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "notebooks" / "15_cumulative_two_track_strain.py"
 OUTPUT = ROOT / "notebooks" / "15_cumulative_two_track_strain.ipynb"

@@ -8,15 +8,14 @@ point is not mistaken for a physical interpretation.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
-import re
 
 import h5py
 import numpy as np
 import pandas as pd
 from scipy.special import gammaln, logsumexp
-
 
 DATE_FILE = re.compile(r"^(\d{8})\.txt$")
 

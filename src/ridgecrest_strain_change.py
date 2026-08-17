@@ -9,9 +9,9 @@ simultaneous search over strain components are retained in the empirical null.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import math
 import warnings
+from dataclasses import dataclass
 
 import numpy as np
 from scipy.ndimage import label

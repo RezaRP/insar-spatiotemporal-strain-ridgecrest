@@ -3,11 +3,10 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import time
+from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import urlopen
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "cgs_2019_ridgecrest_fault_ruptures.geojson"

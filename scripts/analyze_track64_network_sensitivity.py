@@ -17,10 +17,10 @@ sensitivity limitation in every output.
 from __future__ import annotations
 
 import argparse
-from dataclasses import dataclass
 import json
-from pathlib import Path
 import sys
+from dataclasses import dataclass
+from pathlib import Path
 
 import h5py
 import matplotlib.pyplot as plt
@@ -28,21 +28,20 @@ import numpy as np
 import pandas as pd
 from scipy.ndimage import uniform_filter
 
-
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from ridgecrest_fault_points import (  # noqa: E402
-    build_fault_sampling_points,
-    extract_fault_point_series,
-    paired_fault_differences,
-)
 from ridgecrest_transient import (  # noqa: E402
     PatchSeries,
     bayesian_transient_analysis,
     spatial_transient_matched_filter,
 )
 
+from ridgecrest_fault_points import (  # noqa: E402
+    build_fault_sampling_points,
+    extract_fault_point_series,
+    paired_fault_differences,
+)
 
 DEFAULT_PRE = Path(
     r"E:\R64\064A_05410_131313\Curv\cum_filt.h5"

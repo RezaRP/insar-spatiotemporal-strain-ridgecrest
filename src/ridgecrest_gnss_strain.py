@@ -8,17 +8,16 @@ strain directly on a discontinuous rupture.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import json
-from pathlib import Path
-from typing import Sequence
 import math
+from collections.abc import Sequence
+from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from pyproj import Transformer
 from scipy.spatial import Delaunay, cKDTree
-
 
 NANOSTRAIN_PER_MM_PER_KM = 1000.0
 

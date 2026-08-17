@@ -11,16 +11,15 @@ forced spatial vertical predictor as an independently observed field.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import math
-from typing import Mapping, Sequence
+from collections.abc import Sequence
+from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
 from pyproj import Transformer
 from scipy.interpolate import RegularGridInterpolator
 from scipy.spatial import cKDTree
-
 
 NANOSTRAIN_PER_MM_PER_KM = 1000.0
 

@@ -21,13 +21,12 @@ they are used to calculate near-fault displacement gradients.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import math
+from dataclasses import dataclass
 
 import numpy as np
 from scipy.linalg import LinAlgError, cho_factor, cho_solve
 from scipy.spatial import cKDTree
-
 
 PREDICTION_NAMES = ("east_mm", "north_mm", "descending_los_mm")
 

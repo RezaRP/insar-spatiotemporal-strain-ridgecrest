@@ -6,7 +6,6 @@ from pathlib import Path
 
 import nbformat as nbf
 
-
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "notebooks" / "14_two_track_strain_change_detection.py"
 OUTPUT = ROOT / "notebooks" / "14_two_track_strain_change_detection.ipynb"

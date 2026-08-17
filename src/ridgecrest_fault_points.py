@@ -2,16 +2,16 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 import json
+from dataclasses import dataclass
 from pathlib import Path
 
 import h5py
 import numpy as np
 import pandas as pd
+from ridgecrest_transient import PatchSeries, time_years, transient_design
 
 from ridgecrest_jump import huber_irls
-from ridgecrest_transient import PatchSeries, transient_design, time_years
 
 
 @dataclass(frozen=True)
@@ -125,7 +125,6 @@ def build_fault_sampling_points(
         global_axis = eigenvectors[:, int(np.argmax(eigenvalues))]
         if global_axis[1] < 0:
             global_axis *= -1.0
-        global_normal = np.array([-global_axis[1], global_axis[0]])
         along = (xy_mid - origin) @ global_axis
         lower, upper = np.quantile(along, [0.01, 0.99])
         targets = np.arange(

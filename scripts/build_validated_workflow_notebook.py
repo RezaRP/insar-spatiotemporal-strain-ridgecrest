@@ -4,7 +4,6 @@ from pathlib import Path
 
 import nbformat as nbf
 
-
 ROOT = Path(r"D:\Thises\Paper\JD")
 OUTPUT = ROOT / "notebooks" / "06_full_scene_spatiotemporal_interval_inversion.ipynb"
 

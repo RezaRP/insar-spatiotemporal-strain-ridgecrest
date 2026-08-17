@@ -7,7 +7,6 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 
-
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "publication_figures"
 

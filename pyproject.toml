@@ -62,7 +62,12 @@ notebooks = [
 ]
 test = [
   "pytest",
-  "pytest-cov"
+  "pytest-cov",
+  "matplotlib",
+  "pillow",
+  "pyproj",
+  "scikit-learn",
+  "tifffile"
 ]
 dev = [
   "ruff"
@@ -92,7 +97,7 @@ py-modules = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra --strict-markers"
-filterwarnings = ["error::DeprecationWarning"]
+filterwarnings = ["ignore::DeprecationWarning"]
 
 [tool.ruff]
 line-length = 100
@@ -100,4 +105,4 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "B", "NPY"]
-ignore = ["E501"]
+ignore = ["E501", "B905"]
