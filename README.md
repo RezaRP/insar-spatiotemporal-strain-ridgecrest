@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
-[![Tests](https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest/actions/workflows/tests.yml/badge.svg)](https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest/actions/workflows/tests.yml)
+[![Tests](https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest/actions/workflows/tests.yml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21981684.svg)](https://doi.org/10.5281/zenodo.21981684)
 [![Research software](https://img.shields.io/badge/type-research%20software-6f42c1.svg)](#)
 
