@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the accompanying article and the archived software release."
+title: "Spatiotemporal InSAR Strain: Cumulative 2-D Horizontal Strain and Change Detection for the 2019 Ridgecrest Sequence"
+type: software
+version: 1.0.0
+date-released: 2026-08-17
+license: MIT
+repository-code: "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest"
+url: "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest"
+doi: "10.5281/zenodo.XXXXXXX"
+
+authors:
+  - family-names: "Rahimipour"
+    given-names: "Reza"
+    affiliation: "Geomatics Engineering Department, University of Isfahan, Isfahan, Iran"
+    email: "rrp1376@trn.ui.ac.ir"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Mehrabi"
+    given-names: "Hamid"
+    affiliation: "Geomatics Engineering Department, University of Isfahan, Isfahan, Iran"
+    email: "h.mehrabi@eng.ui.ac.ir"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Abolghasem"
+    given-names: "Amir"
+    affiliation: "Department of Earth and Environmental Sciences, Ludwig-Maximilians-Universität München, Munich, Germany"
+    email: "amir.a@lmu.de"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Karshenas"
+    given-names: "Hossein"
+    affiliation: "Artificial Intelligence Department, University of Isfahan, Isfahan, Iran"
+    email: "h.karshenas@eng.ui.ac.ir"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+
+keywords:
+  - InSAR
+  - Sentinel-1
+  - Ridgecrest earthquake
+  - crustal strain
+  - strain tensor
+  - change detection
+  - GNSS
+  - Gaussian process
+  - cokriging
+  - earthquake geodesy
+
+abstract: >-
+  Reproducible software for deriving cumulative two-dimensional horizontal strain from
+  dual-track Sentinel-1 InSAR displacement time series. The workflow removes a
+  GNSS-constrained vertical field from each line of sight with full uncertainty
+  propagation, inverts the corrected horizontal pair for cumulative east-north
+  displacement, estimates the full 2-D strain tensor on a fixed local affine operator,
+  reconstructs near-fault gaps with fault-barrier-aware cokriging, and tests temporal
+  change using calibrated strain innovations with family-wise error control. Applied to
+  80 epochs spanning May 2017 to November 2019 over the 2019 Ridgecrest earthquake
+  sequence.
+
+references:
+  - type: article
+    title: "Resolving near-fault spatiotemporal strain evolution from InSAR displacement time series: application to the 2019 Ridgecrest earthquake sequence"
+    authors:
+      - family-names: "Rahimipour"
+        given-names: "Reza"
+      - family-names: "Mehrabi"
+        given-names: "Hamid"
+      - family-names: "Abolghasem"
+        given-names: "Amir"
+      - family-names: "Karshenas"
+        given-names: "Hossein"
+    journal: "Tectonophysics"
+    year: 2026
+    notes: "Manuscript under review; DOI to be added on publication."

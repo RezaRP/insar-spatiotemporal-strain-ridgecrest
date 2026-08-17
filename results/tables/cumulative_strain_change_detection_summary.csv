@@ -1,0 +1,5 @@
+method,period,observed,empirical_p,supported_at_0.05
+maximum signed spatial-cluster FWER,pre-event surveillance,0.0,1.0,False
+maximum signed spatial-cluster FWER,4-16 July event control,5.8035522632917615,0.03773584905660377,True
+Page CUSUM of 90th-percentile |z|,pre-event surveillance,0.0747253277262988,0.4807692307692308,False
+Page CUSUM of 90th-percentile |z|,4-16 July event control,3.758983222999932,0.018518518518518517,True

@@ -1,0 +1,48 @@
+{
+  "title": "Spatiotemporal InSAR Strain: Cumulative 2-D Horizontal Strain and Change Detection for the 2019 Ridgecrest Sequence",
+  "description": "<p>Reproducible software accompanying the manuscript <em>Resolving near-fault spatiotemporal strain evolution from InSAR displacement time series: application to the 2019 Ridgecrest earthquake sequence</em> (submitted to Tectonophysics).</p><p>The workflow converts ascending Track 64 and descending Track 71 cumulative Sentinel-1 line-of-sight displacement into vertically corrected horizontal LOS, cumulative east-north displacement, and the full cumulative 2-D horizontal strain tensor across 80 acquisition epochs spanning 27 May 2017 to 25 November 2019. GNSS vertical displacement from 24 continuous Nevada Geodetic Laboratory stations is interpolated by an adaptive local Gaussian process and removed from each line of sight with uncertainty propagated through the displacement-inversion covariance. Near-fault gaps left by SBAS coherence masking are completed by fault-barrier-aware, Track-64-conditioned universal cokriging that refuses donor samples across mapped rupture traces. Temporal change is tested with a maximum signed spatial-cluster mass statistic under family-wise error control and a Page CUSUM, both calibrated against an empirical null of consecutive pre-event baseline blocks.</p><p><strong>Interpretation boundary:</strong> the directly observed off-fault domain is the validated primary evidence. Near-fault reconstructed products are retrospective, model-assisted sensitivity maps and must not be cited as measured near-fault strain.</p><p>A companion repository covers the separate Bayesian fault-slip inversion study for the same sequence.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Rahimipour, Reza",
+      "affiliation": "Geomatics Engineering Department, University of Isfahan, Isfahan, Iran"
+    },
+    {
+      "name": "Mehrabi, Hamid",
+      "affiliation": "Geomatics Engineering Department, University of Isfahan, Isfahan, Iran"
+    },
+    {
+      "name": "Abolghasem, Amir",
+      "affiliation": "Department of Earth and Environmental Sciences, Ludwig-Maximilians-Universitaet Muenchen, Munich, Germany"
+    },
+    {
+      "name": "Karshenas, Hossein",
+      "affiliation": "Artificial Intelligence Department, University of Isfahan, Isfahan, Iran"
+    }
+  ],
+  "keywords": [
+    "InSAR",
+    "Sentinel-1",
+    "Ridgecrest earthquake",
+    "crustal strain",
+    "strain tensor",
+    "change detection",
+    "GNSS",
+    "Gaussian process",
+    "cokriging",
+    "earthquake geodesy",
+    "Eastern California Shear Zone"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Third-party Sentinel-1, LiCSAR, LiCSBAS, GACOS, GNSS and California Geological Survey products are not redistributed and remain subject to their providers' terms. The MIT license applies to the original source code in this archive only."
+}

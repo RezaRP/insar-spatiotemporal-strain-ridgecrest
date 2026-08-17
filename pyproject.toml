@@ -1,0 +1,103 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insar-spatiotemporal-strain"
+version = "1.0.0"
+description = "Cumulative 2-D horizontal strain and calibrated change detection from dual-track InSAR displacement time series, applied to the 2019 Ridgecrest earthquake sequence."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Reza Rahimipour" },
+  { name = "Hamid Mehrabi", email = "h.mehrabi@eng.ui.ac.ir" },
+  { name = "Amir Abolghasem" },
+  { name = "Hossein Karshenas" }
+]
+keywords = [
+  "InSAR",
+  "Sentinel-1",
+  "Ridgecrest",
+  "crustal strain",
+  "strain tensor",
+  "change detection",
+  "GNSS",
+  "cokriging",
+  "Gaussian process",
+  "earthquake geodesy"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Physics"
+]
+dependencies = [
+  "h5py",
+  "numpy",
+  "pandas",
+  "scipy"
+]
+
+[project.optional-dependencies]
+analysis = [
+  "matplotlib",
+  "pillow",
+  "pyproj",
+  "scikit-learn",
+  "tifffile"
+]
+notebooks = [
+  "ipykernel",
+  "jupyterlab",
+  "jupytext",
+  "nbformat"
+]
+test = [
+  "pytest",
+  "pytest-cov"
+]
+dev = [
+  "ruff"
+]
+
+[project.urls]
+Homepage = "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest"
+Repository = "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest"
+Issues = "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest/issues"
+Documentation = "https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest/tree/main/docs"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = [
+  "ridgecrest_los_projection",
+  "ridgecrest_local_vertical",
+  "ridgecrest_vertical_los",
+  "ridgecrest_two_track",
+  "ridgecrest_gnss_strain",
+  "ridgecrest_cumulative_strain",
+  "ridgecrest_fault_barrier_cokriging",
+  "ridgecrest_strain_change",
+  "ridgecrest_fault_points",
+  "ridgecrest_jump"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+filterwarnings = ["error::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "NPY"]
+ignore = ["E501"]

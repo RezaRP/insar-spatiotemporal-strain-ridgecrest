@@ -1,0 +1,5 @@
+test,window,statistic,empirical_p,passed_0.05
+pre_event_spatial_max_cluster,2019-05-29 to 2019-07-04,0.0,1.0,False
+pre_event_strain_energy_Page_CUSUM,2019-05-29 to 2019-07-04,0.0,1.0,False
+event_interval_spatial_max_cluster,2019-07-04 to 2019-07-16,16.348781163481256,0.06896551724137931,False
+event_interval_strain_energy_Page_CUSUM,2019-07-04 to 2019-07-16,2.0876587455901685,0.05172413793103448,False

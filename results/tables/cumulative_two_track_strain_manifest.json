@@ -1,0 +1,98 @@
+{
+  "status": "direct cumulative GNSS-U interpolation, cumulative vertical-to-LOS removal, cumulative E-N solution, and dense cumulative strain complete",
+  "reference_epoch": "2017-05-27",
+  "last_epoch": "2019-11-25",
+  "epoch_count": 80,
+  "common_grid_shape": [
+    117,
+    98
+  ],
+  "common_grid_spacing_km": 1.0,
+  "source_tracks": {
+    "ascending": "Track-64 date-named cumulative text stack",
+    "descending": "Track-71 cum_full_scene_no_GACOS.h5"
+  },
+  "track_times_utc": {
+    "ascending_T64": "0 days 01:50:08.490464",
+    "descending_T71": "0 days 13:51:41.812911"
+  },
+  "vertical_processing": {
+    "station_quantity": "U_s(t)-U_s(t0) at exact track time",
+    "persistent_station_count": 24,
+    "persistent_stations": [
+      "BEPK",
+      "CCCC",
+      "COSO",
+      "CPBN",
+      "GOL2",
+      "LNMT",
+      "P463",
+      "P464",
+      "P465",
+      "P569",
+      "P570",
+      "P573",
+      "P580",
+      "P590",
+      "P591",
+      "P592",
+      "P593",
+      "P594",
+      "P595",
+      "P597",
+      "P615",
+      "P616",
+      "P617",
+      "RAMT"
+    ],
+    "interpolator": "pre-event-frozen local gp_rbf",
+    "length_scale_km": {
+      "ascending_T64": 15.0,
+      "descending_T71": 15.0
+    },
+    "mean_weights_frozen": true,
+    "projection": "pixel-specific lU",
+    "subtraction": "D_HLOS = D_LOS - referenced(lU * Uhat)"
+  },
+  "horizontal_solution": {
+    "method": "pixelwise two-track 2x2 E-N inversion",
+    "maximum_geometry_condition_number": 8.0,
+    "full_EN_covariance_saved": true
+  },
+  "cumulative_strain": {
+    "method": "fixed joint E-N local affine GLS",
+    "sample_lattice_km": 2.0,
+    "dense_output_grid_km": 1.0,
+    "support_radius_km": 8.0,
+    "bandwidth_km": 4.0,
+    "minimum_samples": 16,
+    "rupture_buffer_km": 10.0,
+    "minimum_target_distance_from_rupture_km": 18.0,
+    "supported_target_cells": 5410,
+    "maps_interpolated_from_sparse_strain_dots": false
+  },
+  "change_detection": {
+    "source": "exact 12- and 24-day innovations of cumulative strain",
+    "inference_lattice_km": 4.0,
+    "calibration_end": "2019-05-29",
+    "pre_event_surveillance_end": "2019-07-04",
+    "event_control_end": "2019-07-16",
+    "pre_event_max_cluster_p": 1.0,
+    "event_max_cluster_p": 0.03773584905660377,
+    "pre_event_page_cusum_p": 0.4807692307692308,
+    "event_page_cusum_p": 0.018518518518518517,
+    "earthquake_or_post_event_used_for_calibration": false
+  },
+  "operation_order_audit": {
+    "old_interval_first_product_compared": true,
+    "comparison_file": "cumulative_first_vs_interval_first_audit.csv"
+  },
+  "validation_boundary": "Primary observational strain is restricted to >18 km from mapped rupture because the full-scene event vertical interpolation gate failed; the off-fault gate passed.",
+  "limitations": [
+    "Ascending and descending nominal-date acquisitions differ by about 12.026 hours.",
+    "North displacement and north-related strain remain weakly constrained by two near-polar LOS geometries.",
+    "Conditional GLS uncertainty does not fully represent long-range spatial correlation in InSAR.",
+    "No generic interpolation or gap filling is applied across the rupture-adjacent exclusion.",
+    "Cumulative strain levels are descriptive; formal testing uses their duration-normalized innovations."
+  ]
+}

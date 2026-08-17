@@ -1,0 +1,72 @@
+{
+  "analysis": "Track-64-guided near-fault cumulative strain",
+  "dates": {
+    "first": "2017-05-27",
+    "last": "2019-11-25",
+    "epoch_count": 80,
+    "calibration_end": "2019-05-29",
+    "surveillance_end": "2019-07-04",
+    "event_control_end": "2019-07-16"
+  },
+  "coverage": {
+    "near_fault_distance_km": 18.0,
+    "near_fault_cells": 3494,
+    "track64_conditioned_target_cells": 502,
+    "spatial_only_completion_cells": 13,
+    "completed_en_cells": 3494,
+    "former_core_audit_distance_km": 1.0,
+    "former_core_cells": 305,
+    "former_core_supported_strain_cells": 305,
+    "track64_conditioned_imputed_epoch_cells": 34393,
+    "spatial_only_imputed_epoch_cells": 1040,
+    "supported_strain_cells": 3494,
+    "full_area_strain_coverage_fraction": 1.0
+  },
+  "cokriging": {
+    "model": "fixed local latent E-N Matern-3/2 universal cokriging",
+    "source": "paired Track 64/71 samples, collocated Track 64 targets, and paired-only M0 completion for remaining cells",
+    "support_radius_km": 24.0,
+    "maximum_paired_samples": 48,
+    "selected_length_scale_km": 8.0,
+    "selected_covariance_multiplier": 2.0,
+    "selected_target_ascending_noise_multiplier": 5.0,
+    "buffered_cv_radius_km": 5.0,
+    "calibration_mae_m0_mm": 2.5803918847583,
+    "calibration_mae_m1_mm": 2.582037738276114,
+    "calibration_track64_gain": -0.000637830837841231,
+    "exact_gap_shape_gain": -0.0009987584094640167,
+    "event_control_gain": 0.0026335026540919232,
+    "reconstruction_supported_by_pre_event_cv": false,
+    "observed_track71_overwrite_error_mm": 0.0
+  },
+  "barrier": {
+    "distance_source": "data\\cgs_2019_ridgecrest_fault_ruptures.geojson",
+    "side_topology_source": "outputs\\bayesian_inversion\\marginalized_geometry\\final_source_parameters.csv",
+    "posterior_geometry_converged": true
+  },
+  "strain": {
+    "sample_spacing_km": 2,
+    "support_radius_km": 10.0,
+    "bandwidth_km": 4.0,
+    "minimum_samples": 16,
+    "operation": "fixed fault-barrier joint GLS derivative of completed cumulative E-N over the full near-fault area",
+    "full_near_fault_area_included": true,
+    "time_series_summary": "fixed lower and upper 20-percent lobe masks defined on 2019-05-29",
+    "uncertainty": "propagated pointwise one-standard-deviation component uncertainty"
+  },
+  "cumulative_pattern_audit": {
+    "component": "dilatation_microstrain",
+    "display_grid_spacing_km": 1,
+    "inference_lattice_spacing_km": 4,
+    "calibration_exact_12day_interval_count": 53,
+    "calibration_end": "2019-05-29",
+    "observed_only_cell_count": 572,
+    "observed_only_inference_cell_count": 36,
+    "reconstruction_influenced_cell_count": 2922,
+    "reconstruction_influenced_inference_cell_count": 181,
+    "observed_only_22Jun_04Jul_spatial_correlation": 0.9938661591375595,
+    "reconstruction_influenced_22Jun_04Jul_spatial_correlation": 0.9633053860889094,
+    "observed_only_22Jun_04Jul_cluster_p_fwer": 1.0,
+    "reconstruction_influenced_22Jun_04Jul_cluster_p_fwer": 0.018518518518518517
+  }
+}

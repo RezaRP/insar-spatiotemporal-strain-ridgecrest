@@ -1,0 +1,22 @@
+name: insar-strain
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - h5py
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pillow
+  - pyproj
+  - scikit-learn
+  - tifffile
+  - ipykernel
+  - jupyterlab
+  - jupytext
+  - nbformat
+  - pytest
+  - pytest-cov
+  - ruff
+  - pip

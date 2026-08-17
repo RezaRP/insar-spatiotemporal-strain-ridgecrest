@@ -1,0 +1,87 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Environments and editors ----
+.venv/
+venv/
+env/
+.env
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.jupyter_runtime/
+.jupyter_config/
+.jupyter-codex/
+
+# ---- OS and temporary ----
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.temp
+~WRL*.tmp
+
+# ---- Large InSAR / geodetic products (never commit) ----
+*.h5
+*.h5r
+*.he5
+*.unw
+*.unw.tif
+*.cc.tif
+*.geo.tif
+*.tif
+*.tiff
+*.grd
+*.nc
+*.tenv3
+
+# ---- Serialized numerics ----
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+
+# ---- Raw or externally downloaded data ----
+data/raw/
+data/external/
+data/private/
+data/track64/
+GEOC*/
+GACOS*/
+# keep manifests and documentation
+!data/README.md
+!data/manifests/
+!data/manifests/**
+
+# ---- Generated working products ----
+outputs/
+_qa_*/
+_equation_audit/
+_manuscript_review*/
+manuscript/rendered*/
+
+# ---- Manuscript working files ----
+*.docx
+*.doc
+Manuscript_*.pdf
+suplementary*
+supplementary*
+
+# ---- Executed notebooks (commit stripped versions only) ----
+*.executed.ipynb
+
+# ---- Logs ----
+*.log
+*.stdout.log
+*.stderr.log

@@ -1,0 +1,3 @@
+epoch_index,acquisition_date,days_from_reference,asc_t64_time_utc,desc_t71_time_utc,is_reference_epoch,is_last_pre_event
+0,2017-05-27,0,13:52:00,13:51:41,yes,no
+79,2019-11-25,912,13:52:00,13:51:41,no,no

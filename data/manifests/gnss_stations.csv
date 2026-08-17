@@ -1,0 +1,25 @@
+station_id,network,role,notes
+BEPK,NGL,vertical field constraint,
+CCCC,NGL,vertical field constraint,Also used in LOS projection validation
+COSO,NGL,vertical field constraint,
+CPBN,NGL,vertical field constraint,
+GOL2,NGL,vertical field constraint,Far-field
+LNMT,NGL,vertical field constraint,
+P463,NGL,vertical field constraint,Spatial reference station; LOS referenced to median within 1.5 km
+P464,NGL,vertical field constraint,
+P465,NGL,vertical field constraint,
+P466,NGL,vertical field constraint,
+P569,NGL,vertical field constraint,
+P570,NGL,vertical field constraint,
+P573,NGL,vertical field constraint,
+P580,NGL,vertical field constraint,
+P590,NGL,vertical field constraint,
+P591,NGL,vertical field constraint,
+P592,NGL,vertical field constraint,
+P593,NGL,vertical field constraint,
+P594,NGL,vertical field constraint,
+P595,NGL,vertical field constraint,Near-fault; vertical not recoverable when withheld - see docs/methods.md step 1b
+P597,NGL,vertical field constraint,
+P615,NGL,vertical field constraint,
+P616,NGL,vertical field constraint,
+P617,NGL,vertical field constraint,
