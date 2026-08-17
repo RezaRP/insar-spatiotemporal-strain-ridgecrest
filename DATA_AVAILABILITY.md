@@ -21,7 +21,7 @@ This file is a working aid; delete it before publishing the repository if you pr
 > manifests, and figure-generation workflows are openly available at
 > https://github.com/RezaRP/insar-spatiotemporal-strain-ridgecrest. The exact software
 > version used for this study, v1.0.0, is permanently archived on Zenodo at
-> https://doi.org/10.5281/zenodo.XXXXXXX.
+> https://doi.org/10.5281/zenodo.21981684.
 >
 > The derived products required to reproduce every figure and table in this paper —
 > cumulative vertically corrected east–north displacement, the cumulative 1-km strain cube,
@@ -53,7 +53,7 @@ Elsevier/Tectonophysics format:
 > Rahimipour, R., Mehrabi, H., Abolghasem, A., Karshenas, H., 2026.
 > insar-spatiotemporal-strain-ridgecrest: cumulative 2-D horizontal strain and change
 > detection from dual-track InSAR displacement time series (v1.0.0). Zenodo.
-> https://doi.org/10.5281/zenodo.XXXXXXX
+> https://doi.org/10.5281/zenodo.21981684
 
 Cite it in the text at first mention of the workflow, not only in Data Availability.
 

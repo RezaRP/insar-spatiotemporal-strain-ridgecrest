@@ -40,7 +40,7 @@ jobs:
           python -m pip install -e ".[test]"
 
       - name: Run unit tests
-        run: pytest -q --cov=src --cov-report=term-missing
+        run: pytest -v
 
   lint:
     name: Lint
