@@ -11,13 +11,12 @@
 Reproducible analysis workflow accompanying the manuscript:
 
 > **Resolving near-fault spatiotemporal strain evolution from InSAR displacement time series: application to the 2019 Ridgecrest earthquake sequence**
-> R. Rahimipour, H. Mehrabi, A. Abolghasem, H. Karshenas — submitted to *Tectonophysics*.
+> R. Rahimipour, H. Mehrabi, A. Abolghasem, H. Karshenas
 
 > [!NOTE]
 > This repository covers the **cumulative 2-D horizontal strain and change-detection** study.
 > A separate repository, [`ridgecrest-insar-change-detection-slip-inversion`](https://github.com/RezaRP/ridgecrest-insar-change-detection-slip-inversion),
-> covers the companion Bayesian fault-slip inversion study. The two share a Sentinel-1
-> and GNSS input base but are independent analyses with independent software archives.
+> The two share a Sentinel-1 and GNSS input base but are independent analyses with independent software archives.
 
 ---
 
@@ -156,7 +155,7 @@ LiCSBAS cumulative LOS (T64 asc, T71 desc)  +  NGL GNSS daily solutions
 ```
 
 Absolute development paths are not part of the public workflow; input locations are
-supplied through command-line arguments or configuration.
+Supplied through command-line arguments or configuration.
 
 ## Data availability
 
@@ -175,7 +174,7 @@ not relicensed by this repository.
 
 Derived products required to reproduce the manuscript figures and tables without
 re-running the full processing chain are archived on Zenodo at
-**[10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)**.
+**[10.5281/zenodo.21981684](https://doi.org/10.5281/zenodo.21981684)**.
 
 ## Citation
 
