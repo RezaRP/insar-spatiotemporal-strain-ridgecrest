@@ -9,9 +9,9 @@ from pathlib import Path
 import h5py
 import numpy as np
 import pandas as pd
-from ridgecrest_transient import PatchSeries, time_years, transient_design
 
 from ridgecrest_jump import huber_irls
+from ridgecrest_transient import PatchSeries, time_years, transient_design
 
 
 @dataclass(frozen=True)

@@ -31,16 +31,15 @@ from scipy.ndimage import uniform_filter
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from ridgecrest_transient import (  # noqa: E402
-    PatchSeries,
-    bayesian_transient_analysis,
-    spatial_transient_matched_filter,
-)
-
 from ridgecrest_fault_points import (  # noqa: E402
     build_fault_sampling_points,
     extract_fault_point_series,
     paired_fault_differences,
+)
+from ridgecrest_transient import (  # noqa: E402
+    PatchSeries,
+    bayesian_transient_analysis,
+    spatial_transient_matched_filter,
 )
 
 DEFAULT_PRE = Path(
